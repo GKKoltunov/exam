@@ -1,0 +1,178 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  font-family: 'Nunito', sans-serif;
+}
+
+
+.container{
+  max-width: 780px;
+  margin: 0 auto;
+  padding: 40px;
+  background: #fff;
+}
+
+.order__number{
+  color:  #73798C;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.status-time{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 5px;
+}
+
+h1{
+  color: #000;
+font-size: 36px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.delivery-time{
+  color: #000;
+text-align: right;
+font-size: 36px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+header::after{
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+background: #E2E2E9;
+margin-top: 31px;
+}
+
+.adress{
+  margin-top: 9px;
+}
+
+.adress__text{
+  color: #000;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+}
+
+.buttons{
+  display: flex;
+  margin-top: 70px;
+  justify-content: space-between;
+}
+
+.button{
+  width: 190px;
+height: 48px;
+  border-radius: 1000px;
+background:  #F96900;
+color: #FFF;
+text-align: center;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+border: none;
+cursor: pointer;
+transition: 0.5s;
+}
+
+.button:hover{
+  background:  #f8a060;
+}
+
+.button-cancel{
+  width: 160px;
+height: 48px;
+border-radius: 1000px;
+background: #FFF0E6;
+  color:  #D15700;
+text-align: center;
+font-size: 16px;
+font-style: normal;
+font-weight: 600;
+line-height: normal;
+border: none;
+cursor: pointer;
+transition: 0.5s;
+}
+
+.button-cancel:hover{
+  background: #edbb99;
+}
+
+@media(max-width:650px){
+  .delivery-time{
+    display: none;
+  }
+
+  .order__number{
+    color: #72788B;
+font-family: Arial;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+  }
+
+h1{
+  font-size: 24px; 
+}
+
+  header::after{
+    display: none;
+  }
+
+  .buttons{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.adress{
+  margin-top: 12px;
+  border-radius: 10px;
+background: #F3F3F7;
+padding: 18px 20px;
+}
+
+.adress__text{
+  display: flex;
+  flex-direction: column;
+}
+
+.adress__span{
+  color: #000;
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.container{
+  padding: 16px;
+}
+
+.button{
+  width: 100%;
+}
+
+.button-cancel{
+  width: 100%;
+}
+}
